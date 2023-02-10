@@ -1,14 +1,9 @@
-﻿Console.WriteLine("Введите 1 целое число");
-int numberA = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите 2 целое число");
-int numberB = int.Parse(Console.ReadLine());
-if(numberA > numberB)
+﻿Console.WriteLine("Введите целое число");
+int A = int.Parse(Console.ReadLine());
+int B = A;
+A = - A;
+while (A <= B)
 {
-    Console.WriteLine("Наибольшее число  " + numberA);
-    Console.WriteLine("Наименьшее число  " + numberB);
-}
-else
-{
-   Console.WriteLine("Наибольшее число  " + numberB);
-    Console.WriteLine("Наименьшее число  " + numberA); 
+    Console.Write(A + ", ");
+    A ++;
 }
